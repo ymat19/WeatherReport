@@ -35,12 +35,13 @@ export const WeatherImage = ({ isRainy }: Props) => {
         className="video"
         id="video"
         loop
+        autoPlay
         style={{
           position: "absolute",
           zIndex: -1,
           opacity: 0,
-          width: "100%", // 必要に応じてサイズを調整してね♥
-          height: "100%", // これもね♥
+          width: "100%",
+          height: "100%",
         }}
       >
         <source
