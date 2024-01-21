@@ -10,7 +10,7 @@ export const WeatherImage = ({ isRainy }: Props) => {
   const [value, setValue] = useState(new Date());
 
   useEffect(() => {
-    const interval = setInterval(() => setValue(new Date()), 1000 * 60);
+    const interval = setInterval(() => setValue(new Date()), 1000);
 
     return () => {
       clearInterval(interval);
