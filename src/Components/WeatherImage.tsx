@@ -19,7 +19,7 @@ export const WeatherImage = ({ isRainy }: Props) => {
   console.log(isRainy);
 
   return isRainy ? (
-    <img src="/5000choyen.png" />
+    <img src={`${import.meta.env.BASE_URL}/5000choyen.png`} />
   ) : (
     <Clock renderMinuteMarks={false} renderSecondHand={false} value={value} />
   );
