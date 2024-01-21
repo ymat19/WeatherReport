@@ -5,6 +5,13 @@ import { AreaData, SelectedAreaInfo } from "./AreaData";
 import { SelectArea } from "./Components/SelectArea";
 import { WeatherReport } from "./WeatherReport";
 
+const centeredStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100vh", // 画面の高さに合わせる
+};
+
 const getAreaData = async (
   setAreaData: React.Dispatch<SetStateAction<AreaData | null>>
 ) => {
@@ -55,12 +62,12 @@ function App() {
   }, [selectedArea]);
 
   return (
-    <>
+    <div style={centeredStyle}>
       {selectedArea ? null : (
         <SelectArea areaData={areaData} setSelectedArea={setSelectedArea} />
       )}
       {selectedArea && <WeatherImage isRainy={isRainy} />}
-    </>
+    </div>
   );
 }
 
