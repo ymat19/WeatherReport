@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# 傘判定 Web アプリ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 概要
 
-Currently, two official plugins are available:
+気象庁の API(非公式)を用いて、その日に雨が降るかどうかチェックします。雨じゃなければ時計が表示されます。
+スマートディスプレイで開く想定です。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 公開ページ
 
-## Expanding the ESLint configuration
+https://ymat19.github.io/WeatherReport/
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 注意事項
 
-- Configure the top-level `parserOptions` property like this:
+- このアプリは、気象庁の API を非公式に利用しています。API の変更やアクセス制限などにより、予期せぬエラーやデータの取得不可が発生する可能性があります。
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## お借りしたもの/してるもの
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+5000 兆円ジェネレーター super
+https://yurafuca.com/5000choyen/
+
+気象庁 あなたの街の防災情報
+https://www.jma.go.jp/jma/index.html
+
+## ライセンス
+
+このプロジェクトは以下のライセンスのもとで公開されています。
+https://github.com/ymat19/WeatherReport/blob/main/public/licenses.txt
