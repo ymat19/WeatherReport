@@ -10,7 +10,7 @@ export const WeatherImage = ({ isRainy }: Props) => {
   const [value, setValue] = useState(new Date());
 
   useEffect(() => {
-    const interval = setInterval(() => setValue(new Date()), 1000);
+    const interval = setInterval(() => setValue(new Date()), 1000 * 60);
 
     return () => {
       clearInterval(interval);
@@ -21,6 +21,6 @@ export const WeatherImage = ({ isRainy }: Props) => {
   return isRainy ? (
     <img src={`${import.meta.env.BASE_URL}/5000choyen.png`} />
   ) : (
-    <Clock renderMinuteMarks={false} renderSecondHand={true} value={value} />
+    <Clock renderMinuteMarks={false} renderSecondHand={false} value={value} />
   );
 };
