@@ -45,7 +45,7 @@ export const WeatherImage = ({ isRainy }: Props) => {
         }}
       >
         <source
-          src={`${import.meta.env.BASE_URL}/sample-5s.mp4`}
+          src={`${import.meta.env.BASE_URL}/sample-5s-silent.mp4`}
           type="video/mp4"
         />
       </video>
