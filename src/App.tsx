@@ -51,14 +51,15 @@ function App() {
   }, []);
 
   useEffect(() => {
-    selectedArea && getWeatherReport(selectedArea, setRainy);
-    const task = setInterval(() => {
-      console.log("called");
-      console.log(selectedArea);
-      selectedArea && getWeatherReport(selectedArea, setRainy);
-    }, 1000 * 60 * 5);
+    if (selectedArea) {
+      getWeatherReport(selectedArea, setRainy);
 
-    return () => clearInterval(task);
+      const task = setInterval(() => {
+        getWeatherReport(selectedArea, setRainy);
+      }, 1000 * 60 * 5);
+
+      return () => clearInterval(task);
+    }
   }, [selectedArea]);
 
   return (

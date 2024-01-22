@@ -16,7 +16,7 @@ export const WeatherImage = ({ isRainy }: Props) => {
       clearInterval(interval);
     };
   }, []);
-  console.log(isRainy);
+  //console.log(isRainy);
 
   return (
     <>
