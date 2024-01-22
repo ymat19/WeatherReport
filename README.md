@@ -21,7 +21,14 @@ https://yurafuca.com/5000choyen/
 気象庁 あなたの街の防災情報
 https://www.jma.go.jp/jma/index.html
 
+Sample files library
+https://samplelib.com/
+
 ## ライセンス
 
-このプロジェクトは以下のライセンスのもとで公開されています。
-https://github.com/ymat19/WeatherReport/blob/main/public/licenses.txt
+このプロジェクトは以下の MIT ライセンスのもとで公開されています。
+また、このプロジェクトに含まれるオープンソースソフトウェアのライセンスの詳細については、以下で確認できます。
+
+```
+public/licenses.txt
+```
